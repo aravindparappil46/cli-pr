@@ -20,7 +20,7 @@ $ npm install -g @aravindparappil/cli-pr
 $ create-pr COMMAND
 running command...
 $ create-pr (-v|--version|version)
-@aravindparappil/cli-pr/1.0.0 darwin-x64 node-v14.4.0
+@aravindparappil/cli-pr/1.1.0 darwin-x64 node-v14.4.0
 $ create-pr --help [COMMAND]
 USAGE
   $ create-pr COMMAND

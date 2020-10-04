@@ -1,7 +1,7 @@
 {
   "name": "@aravindparappil/cli-pr",
   "description": "Interactively create pull requests right from your terminal!",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Aravind Parappil",
   "bin": {
     "create-pr": "./bin/run"
