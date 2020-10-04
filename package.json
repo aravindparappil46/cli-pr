@@ -1,0 +1,47 @@
+{
+  "name": "cli-pr",
+  "description": "Interactively create pull requests right from your terminal!",
+  "version": "0.0.1",
+  "author": "Aravind Parappil",
+  "bin": {
+    "create-pr": "./bin/run"
+  },
+  "bugs": "https://github.com/aravindparappil46/cli-pr/issues",
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.0",
+    "@types/inquirer": "^7.3.1",
+    "inquirer": "^7.3.3",
+    "tslib": "^1.13.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "@types/node": "^10.17.35",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/aravindparappil46/cli-pr",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "create-pr"
+  },
+  "repository": "aravindparappil46/cli-pr",
+  "scripts": {
+    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
