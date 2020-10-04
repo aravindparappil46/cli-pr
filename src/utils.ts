@@ -27,8 +27,7 @@ export class Utils {
 
     runAwsCommand(args: any) {
         const title = args.release + ' ' + args.jiraId + ' ' + args.title;
-        const jiraURL = '<ADD YOUR JIRA BASE URL HERE>/' + args.jiraId;
-        const description = '[Jira Link](' + jiraURL + ')\n\n' + args.description.trim();
+        const description = args.description.trim();
 
         const cmd = 'aws codecommit create-pull-request' 
                     + ' --title ' + JSON.stringify(title)

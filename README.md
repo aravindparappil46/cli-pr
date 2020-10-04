@@ -12,10 +12,21 @@ Currently only supports AWS CodeCommit.
 
 <!-- toc -->
 * [Usage](#usage)
-* [Commands](#commands)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
+```sh-session
+$ npm install -g cli-pr
+$ create-pr COMMAND
+running command...
+$ create-pr (-v|--version|version)
+cli-pr/0.0.1 darwin-x64 node-v14.4.0
+$ create-pr --help [COMMAND]
+USAGE
+  $ create-pr COMMAND
+...
+```
+<!-- usagestop -->
 ```sh-session
 $ npm install -g cli-pr
 $ create-pr 
@@ -27,3 +38,4 @@ USAGE
   $ create-pr
 ...
 ```
+If you are running the `create-pr` command from within a directory that is linked to an AWS CodeCommit repo already, you will get defaults for repo name & source branch
