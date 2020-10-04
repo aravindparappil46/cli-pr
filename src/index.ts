@@ -13,9 +13,15 @@ class CliPr extends Command {
   
   async run() {
     const utils = new Utils();
+    let sourceBranch;
+    let repoName;
 
-    const sourceBranch = await utils.getCurrentBranch();
-    const repoName = await utils.getRepositoryName();
+    try {
+      sourceBranch = await utils.getCurrentBranch();
+      repoName = await utils.getRepositoryName();
+    } catch (e) {
+      this.warn('Looks like you are not inside a git directory...\nYou would have to enter repo & branch name manually');
+    }
 
     let responses: any = await inquirer.prompt([
       {
